@@ -1,8 +1,8 @@
 
 const apiBaseUrl = import.meta.env.VITE_API_URL
-    || (import.meta.env.DEV ? 'https://laravel-api-alpha.vercel.app/api/' : '/api/');
+    || 'https://laravel-api-alpha.vercel.app/api/';
 const imageBaseUrl = import.meta.env.VITE_IMAGE_BASE_URL
-    || (import.meta.env.DEV ? 'https://laravel-api-alpha.vercel.app/storage/' : '/storage/');
+    || 'https://laravel-api-alpha.vercel.app/storage/';
 
 const Config = {
     base_url: apiBaseUrl.endsWith('/') ? apiBaseUrl : `${apiBaseUrl}/`,
